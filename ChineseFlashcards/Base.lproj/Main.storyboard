@@ -102,10 +102,10 @@
                                 <color key="shadowColor" cocoaTouchSystemColor="lightTextColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kip-NA-Zkj">
-                                <rect key="frame" x="7" y="72" width="110" height="30"/>
+                                <rect key="frame" x="257" y="72" width="110" height="30"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="110" id="5Rz-gv-E4r"/>
+                                    <constraint firstAttribute="width" constant="110" id="zmK-IX-mbo"/>
                                 </constraints>
                                 <state key="normal" title="Clear Drawing">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -114,16 +114,30 @@
                                     <action selector="clearDrawing" destination="JEX-9P-axG" eventType="touchUpInside" id="RPW-mz-cIp"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Trm-lb-2CE">
+                                <rect key="frame" x="7" y="72" width="105" height="30"/>
+                                <color key="backgroundColor" red="0.99998384714126587" green="0.99605172872543335" blue="0.9999958872795105" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="105" id="bmm-HR-hJ8"/>
+                                </constraints>
+                                <state key="normal" title="Previous Card">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="previousCard" destination="JEX-9P-axG" eventType="touchUpInside" id="91e-4n-uOu"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.86161994934082031" green="0.89786392450332642" blue="0.91872620582580566" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="Kip-NA-Zkj" firstAttribute="top" secondItem="SYR-Wa-9uf" secondAttribute="bottom" constant="8" symbolic="YES" id="1fb-Q0-N3Z"/>
                             <constraint firstItem="YbR-B4-y3I" firstAttribute="trailing" secondItem="qqD-Gx-BfW" secondAttribute="trailing" id="3Ky-BF-Lkk"/>
                             <constraint firstItem="JHU-wb-c6I" firstAttribute="leading" secondItem="svH-Pt-448" secondAttribute="leadingMargin" constant="-9" id="4fk-TH-fHv"/>
-                            <constraint firstItem="Kip-NA-Zkj" firstAttribute="leading" secondItem="U6x-AC-SVc" secondAttribute="leading" id="6b8-Zf-YcR"/>
                             <constraint firstAttribute="trailingMargin" secondItem="kod-ql-Uex" secondAttribute="trailing" constant="-8" id="7XR-iT-EbJ"/>
                             <constraint firstItem="U6x-AC-SVc" firstAttribute="leading" secondItem="JHU-wb-c6I" secondAttribute="leading" id="7ug-eE-O1b"/>
                             <constraint firstItem="kod-ql-Uex" firstAttribute="centerY" secondItem="svH-Pt-448" secondAttribute="centerY" constant="253.5" id="826-c4-jbD"/>
+                            <constraint firstItem="Trm-lb-2CE" firstAttribute="leading" secondItem="U6x-AC-SVc" secondAttribute="leading" id="B7i-jq-081"/>
                             <constraint firstItem="YbR-B4-y3I" firstAttribute="top" secondItem="qqD-Gx-BfW" secondAttribute="bottom" constant="8" symbolic="YES" id="BAA-tf-OTx"/>
                             <constraint firstItem="qqD-Gx-BfW" firstAttribute="top" secondItem="kod-ql-Uex" secondAttribute="bottom" constant="-68" id="FC3-se-V9d"/>
                             <constraint firstItem="TzV-go-06P" firstAttribute="top" secondItem="SYR-Wa-9uf" secondAttribute="bottom" constant="113" id="Hnu-b3-1Yl"/>
@@ -131,7 +145,7 @@
                             <constraint firstItem="TzV-go-06P" firstAttribute="leading" secondItem="svH-Pt-448" secondAttribute="leading" constant="129" id="JH6-2z-2cf"/>
                             <constraint firstItem="kod-ql-Uex" firstAttribute="leading" secondItem="JHU-wb-c6I" secondAttribute="trailing" constant="18" id="Wdm-ps-rCD"/>
                             <constraint firstItem="YbR-B4-y3I" firstAttribute="leading" secondItem="qZO-jd-MRX" secondAttribute="leading" id="XIz-5K-fN9"/>
-                            <constraint firstItem="Kip-NA-Zkj" firstAttribute="top" secondItem="SYR-Wa-9uf" secondAttribute="bottom" constant="8" symbolic="YES" id="acb-uP-5oT"/>
+                            <constraint firstItem="Trm-lb-2CE" firstAttribute="baseline" secondItem="Kip-NA-Zkj" secondAttribute="baseline" id="bwy-On-BLD"/>
                             <constraint firstItem="TzV-go-06P" firstAttribute="centerX" secondItem="svH-Pt-448" secondAttribute="centerX" id="dtj-sK-oFw"/>
                             <constraint firstItem="qZO-jd-MRX" firstAttribute="top" secondItem="JHU-wb-c6I" secondAttribute="bottom" constant="8" symbolic="YES" id="eCu-F5-uOo"/>
                             <constraint firstItem="JHU-wb-c6I" firstAttribute="top" secondItem="U6x-AC-SVc" secondAttribute="bottom" constant="8" symbolic="YES" id="eGP-QJ-1Yo"/>
@@ -139,6 +153,7 @@
                             <constraint firstItem="TzV-go-06P" firstAttribute="centerX" secondItem="U6x-AC-SVc" secondAttribute="centerX" id="fd8-tT-u8y"/>
                             <constraint firstItem="JHU-wb-c6I" firstAttribute="leading" secondItem="qZO-jd-MRX" secondAttribute="leading" id="kCY-18-ife"/>
                             <constraint firstItem="JHU-wb-c6I" firstAttribute="leading" secondItem="qqD-Gx-BfW" secondAttribute="leading" id="lDU-C4-33V"/>
+                            <constraint firstItem="Kip-NA-Zkj" firstAttribute="trailing" secondItem="U6x-AC-SVc" secondAttribute="trailing" id="mGS-aU-TN9"/>
                             <constraint firstItem="YbR-B4-y3I" firstAttribute="trailing" secondItem="qZO-jd-MRX" secondAttribute="trailing" id="y3S-6K-hHd"/>
                             <constraint firstItem="JHU-wb-c6I" firstAttribute="top" secondItem="kod-ql-Uex" secondAttribute="top" id="yNN-JY-Nh6"/>
                         </constraints>

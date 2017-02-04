@@ -100,7 +100,7 @@ class DetailViewController: UIViewController {
                 frontback = "front"
             }
             
-            
+     
         }
 
     } */
@@ -125,6 +125,12 @@ class DetailViewController: UIViewController {
         }
     }
     
+    @IBAction func previousCard() {
+        if(i != 0){
+        i -= 1
+        cardText.text = "Card " + String(mycards[i].id)
+        }
+    }
     
     override func touchesBegan(_ touches: Set<UITouch>,
                                with event: UIEvent?){
@@ -145,7 +151,7 @@ class DetailViewController: UIViewController {
             UIGraphicsGetCurrentContext()?.move(to: CGPoint(x: lastPoint.x, y: lastPoint.y))
             UIGraphicsGetCurrentContext()?.addLine(to: CGPoint(x: currentPoint.x, y: currentPoint.y))
             UIGraphicsGetCurrentContext()?.setLineCap(CGLineCap.round)
-            UIGraphicsGetCurrentContext()?.setLineWidth(9.0)
+            UIGraphicsGetCurrentContext()?.setLineWidth(4.0)
             UIGraphicsGetCurrentContext()?.setStrokeColor(red: red, green: green, blue: blue, alpha: 1.0)
             UIGraphicsGetCurrentContext()?.strokePath()
             self.imageView.image = UIGraphicsGetImageFromCurrentImageContext()
