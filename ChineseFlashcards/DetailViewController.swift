@@ -123,6 +123,7 @@ class DetailViewController: UIViewController {
         
         cardText.text = "Card " + String(mycards[i].id)
         }
+        self.imageView.image = nil
     }
     
     @IBAction func previousCard() {
@@ -130,6 +131,7 @@ class DetailViewController: UIViewController {
         i -= 1
         cardText.text = "Card " + String(mycards[i].id)
         }
+        self.imageView.image = nil
     }
     
     override func touchesBegan(_ touches: Set<UITouch>,
